@@ -1,0 +1,22 @@
+<div id="ctnr" class="container">
+  <div id="msg_content" class="content-holder">
+    <span id="main_msg_title" class="content-span">
+    </span>
+    <span id="description"> a <a href="http://codeyak.pacificio.com" class="pacificiolink">programming chat site</a> from <a id="author-link" class="credits" href="http://danmckeown.info">Dan McKeown</a>
+    </span>
+  </div>
+<div id="rform">
+  <%= form_for @msg do |f| %>
+    <span id="sender">sender:</span><%= f.text_field :sender, :value => @nmh %><br />
+    <%= f.text_area :content %>
+    <br />
+    <span id="sbutton">
+      <input type="submit" name="commit" value="Create Msg" />
+    </span>
+    <br />
+    <span id="codeYakLogo">
+      <%= image_tag 'codeYak.jpg' %>
+    </span>
+  <% end %>
+</div> <!-- end of div#cntr -->
+</div>

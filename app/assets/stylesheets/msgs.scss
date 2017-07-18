@@ -1,0 +1,100 @@
+//  SCSS for the CodeYak programmer chat app based on http://codepen.io/pacificpelican/pen/NpEVdq
+//  copyright March 2017 by Dan McKeown http://danmckeown.info
+
+.container {
+  display: block;
+  grid-template-columns: 100px 50px 100px;
+  grid-template-rows: 80px auto 80px;
+  grid-gap: 10px 15px;
+  margin-left: 3em;
+}
+
+span#main_msg_title {
+  font-size: large;
+}
+
+.item-b {
+  grid-column: 2 / 2;
+  grid-row: 2 / 3;
+}
+
+#msg_content {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+}
+
+span.single_msg {
+  display: block;
+  background-color: yellow;
+  margin-top: 0.3rem;
+  border-style: solid;
+  border-width: 0.1em;
+  border-top-right-radius: 1em;
+  max-width: 80vw;
+  border-color: floralwhite;
+}
+
+a.credits, a.pacificiolink {
+  text-decoration: none;
+}
+
+span#description {
+  font-size: 0.7rem;
+}
+
+span.single_msg_metadata {
+  display: block;
+  background-color: lightgreen;
+  margin-top: 0rem;
+  border-style: solid;
+  border-width: 0.03em;
+  border-top-right-radius: 0.1em;
+  max-width: 80vw;
+  font-size: small;
+  color: gray;
+}
+
+div#msg_content {
+  margin-bottom: 10px;
+}
+
+div.content-holder {
+  font-family: -apple-system, -apple-system-body, Helvetica, 'Droid Sans', sans-serif;
+}
+
+input.text_in, textarea#msg_content {
+  background-color: #feffe5;
+  padding-top: 0.5em;
+  font-size: 14px;
+  padding-bottom: 0.5rem;
+  padding-left: 5px;
+  padding-right: 1px;
+  font-family: Helvetica, 'Droid Sans', 'Open Sans', 'PT Sans', sans-serif;
+  width: 60vw;
+  margin-bottom: 0.3rem;
+}
+
+input#name-input, input#msg_sender {
+  max-width: 12vw;
+  background-color: floralwhite;
+}
+
+button#inp-btn, span#sbutton input {
+  display: block;
+  width: 10em;
+  background-color: #ffe7c1;
+  font-family: Menlo, mono;
+}
+
+@media screen and (max-width: 760px) {
+  input.text_in, textarea#msg_content {
+    width: 75vw;
+  }
+  div.container {
+    margin-left: 0.2em;
+  }
+}
+
+img {
+  box-shadow: 5px 5px 3px #888888;
+}
